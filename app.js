@@ -1,8 +1,10 @@
-console.log("script is working from different file")
-//input 
-var userName=prompt("enter user name");
-// processing
-var welcomeMsg="This script works well "+userName;
-// output
-alert(welcomeMsg);
+var btnTranslate=document.querySelector("#btn-translate");
 
+var txtButton=document.querySelector("#txt-area");
+
+function clickEventHandler(){
+    console.log("clicked");
+    console.log("input ",txtButton.value);
+}
+
+btnTranslate.addEventListener("click",clickEventHandler);
