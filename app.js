@@ -4,10 +4,10 @@ var txtInput=document.querySelector("#txt-input");
 
 var outputDiv=document.querySelector("#out")
 
-var serverUrl="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+var serverURL="https://api.funtranslations.com/translate/minion.json"
 
 function getTranslatedUrl(text){
-    return serverUrl+"?"+"text"+text;
+    return serverURL+"?"+"text="+text;
 }
 
 function errorHandler(error){
@@ -20,7 +20,11 @@ function clickEventHandler(){
 
     fetch(getTranslatedUrl(inputText))
      .then(Response => Response.json())
-     .then(json => console.log(json.contents.translated))
+     .then(json => 
+        {
+            var translatedText=json.contents.translated;
+            outputDiv.innerText=translatedText;
+        })
      .catch(errorHandler);
 };
 
