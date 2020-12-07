@@ -1,0 +1,19 @@
+#txt-input{
+    background-color: yellow;
+}
+#txt-input {
+    width:70%;
+    height:10vh;
+    display: block;
+    margin:2rem;
+    padding:1rem;
+}
+
+#out{
+    border:1px solid black;
+    width:70%;
+    height:10vh;
+    display:block;
+    margin:2rem;
+    padding:1rem;
+}
