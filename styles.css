@@ -11,7 +11,12 @@
 
 body {
     margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     font-family: 'Yeon Sung', cursive;
+    min-height: 100vh;
+
 }
 
 nav {
@@ -67,20 +72,14 @@ button {
     max-height:20vh;
     padding: 1rem;
     overflow:scroll;
+    margin-bottom: 2rem;
 }
 
 footer{
   text-align: center;
   background-color: var(--primary-color);
   padding:1rem;
-  position: relative;;
-  bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
-
-footer p{
-    margin:auto;
-    width:var(--width-break);
-}
-
 
